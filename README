@@ -1,0 +1,86 @@
+============================================================
+                     Penn Action Dataset
+============================================================
+Penn Action Dataset contains 2326 video sequences of 15 
+different actions and human joint annotations for each 
+sequence. The dataset is available for download via the
+following link:
+
+   https://upenn.box.com/PennAction
+
+------------------------------------------------------------
+                          Reference
+------------------------------------------------------------
+If you use our dataset, please cite the following paper:
+
+Weiyu Zhang, Menglong Zhu, Kosta Derpanis,  "From Actemes 
+to Action: A Strongly-supervised Representation for Detailed 
+Action Understanding" International Conference on Computer 
+Vision (ICCV). Dec 2013.
+
+------------------------------------------------------------
+                       Dataset Content
+------------------------------------------------------------
+The dataset is organized in the following format:
+
+/frames  ( all image sequences )
+   /0001 
+      000001.jpg
+      000002.jpg
+      ...
+   /0002
+    ...
+/labels  ( all annotations )
+    0001.mat
+    0002.mat
+    ...
+/tools   ( visualization scripts )
+    visualize.m
+    ...
+
+where all images frames are in /frames folder, and all 
+annotations are in /labels folder. Annotations for each
+sequence including class label, coarse viewpoint, human 
+body joints, 2D bounding boxes, and training/testing 
+label are contained in separate mat files under /labels.
+
+All frames are in RGB. The resolution of the frames are 
+within the size of 640x480.
+
+An example annotation looks like the following in MATLAB:
+
+annotation = 
+
+        action: 'tennis_serve'
+          pose: 'back'
+             x: [46x13 double]
+             y: [46x13 double]
+    visibility: [46x13 logical]
+         train: 1
+          bbox: [46x4 double]
+    dimensions: [272 481 46]
+       nframes: 46
+
+------------------------------------------------------------
+                       List of Actions
+------------------------------------------------------------
+baseball_pitch  clean_and_jerk  pull_ups  strumming_guitar  
+baseball_swing  golf_swing      push_ups  tennis_forehand   
+bench_press     jumping_jacks   sit_ups   tennis_serve
+bowling         jump_rope       squats    
+
+------------------------------------------------------------
+                      Annotation Tools
+------------------------------------------------------------
+We made available the annotation tool used in creating this
+dataset. Please refer to http://dreamdragon.github.io/vatic/
+for more details.
+
+------------------------------------------------------------
+                           Contact
+------------------------------------------------------------
+Please direct any questions regarding the dataset to
+
+Menglong Zhu <menglong@cis.upenn.edu>
+http://cis.upenn.edu/~menglong
+
