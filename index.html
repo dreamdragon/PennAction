@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Pennaction : Penn Action Dataset, with human body joints for all frames!" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Pennaction</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/dreamdragon/PennAction">View on GitHub</a>
+
+          <h1 id="project_title">Pennaction</h1>
+          <h2 id="project_tagline">Penn Action Dataset, with human body joints for all frames!</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/dreamdragon/PennAction/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/dreamdragon/PennAction/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a name="introducing-penn-action-dataset" class="anchor" href="#introducing-penn-action-dataset"><span class="octicon octicon-link"></span></a>Introducing Penn Action Dataset</h2>
+
+<p>Penn Action Dataset contains 2326 video sequences of 15 
+different actions and human joint annotations for each 
+sequence. The dataset is available for download via the
+following link:</p>
+
+<p><a href="https://upenn.box.com/PennAction">https://upenn.box.com/PennAction</a></p>
+
+<h2>
+<a name="reference" class="anchor" href="#reference"><span class="octicon octicon-link"></span></a>Reference</h2>
+
+<p>If you use our dataset, please cite the following paper:</p>
+
+<pre><code>Weiyu Zhang, Menglong Zhu, Kosta Derpanis,  "From Actemes 
+to Action: A Strongly-supervised Representation for Detailed 
+Action Understanding" International Conference on Computer 
+Vision (ICCV). Dec 2013.
+</code></pre>
+
+<h2>
+<a name="dataset-content" class="anchor" href="#dataset-content"><span class="octicon octicon-link"></span></a>Dataset Content</h2>
+
+<p>The dataset is organized in the following format:</p>
+
+<pre><code>/frames  ( all image sequences )
+   /0001 
+      000001.jpg
+      000002.jpg
+      ...
+   /0002
+    ...
+/labels  ( all annotations )
+    0001.mat
+    0002.mat
+    ...
+/tools   ( visualization scripts )
+    visualize.m
+    ...
+</code></pre>
+
+<p>where all images frames are in /frames folder, and all 
+annotations are in /labels folder. Annotations for each
+sequence including class label, coarse viewpoint, human 
+body joints, 2D bounding boxes, and training/testing 
+label are contained in separate mat files under /labels.</p>
+
+<p>All frames are in RGB. The resolution of the frames are 
+within the size of 640x480.</p>
+
+<p>An example annotation looks like the following in MATLAB:</p>
+
+<p>annotation = </p>
+
+<pre><code>    action: 'tennis_serve'
+      pose: 'back'
+         x: [46x13 double]
+         y: [46x13 double]
+visibility: [46x13 logical]
+     train: 1
+      bbox: [46x4 double]
+dimensions: [272 481 46]
+   nframes: 46
+</code></pre>
+
+<h2>
+<a name="list-of-actions" class="anchor" href="#list-of-actions"><span class="octicon octicon-link"></span></a>List of Actions</h2>
+
+<pre><code>baseball_pitch  clean_and_jerk  pull_ups  strumming_guitar  
+baseball_swing  golf_swing      push_ups  tennis_forehand   
+bench_press     jumping_jacks   sit_ups   tennis_serve
+bowling         jump_rope       squats    
+</code></pre>
+
+<h2>
+<a name="annotation-tools" class="anchor" href="#annotation-tools"><span class="octicon octicon-link"></span></a>Annotation Tools</h2>
+
+<p>We made available the annotation tool used in creating this
+dataset. Please refer to <a href="http://dreamdragon.github.io/vatic/">http://dreamdragon.github.io/vatic/</a>
+for more details.</p>
+
+<h2>
+<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>Please direct any questions regarding the dataset to</p>
+
+<p>Menglong Zhu <a href="mailto:menglong@cis.upenn.edu">menglong@cis.upenn.edu</a>
+<a href="http://cis.upenn.edu/%7Emenglong">http://cis.upenn.edu/~menglong</a></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Pennaction maintained by <a href="https://github.com/dreamdragon">dreamdragon</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
