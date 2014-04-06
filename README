@@ -13,7 +13,7 @@ following link:
 ------------------------------------------------------------
 If you use our dataset, please cite the following paper:
 
-Weiyu Zhang, Menglong Zhu, Kosta Derpanis,  "From Actemes 
+Weiyu Zhang, Menglong Zhu and Konstantinos Derpanis,  "From Actemes 
 to Action: A Strongly-supervised Representation for Detailed 
 Action Understanding" International Conference on Computer 
 Vision (ICCV). Dec 2013.
@@ -23,43 +23,44 @@ Vision (ICCV). Dec 2013.
 ------------------------------------------------------------
 The dataset is organized in the following format:
 
-/frames  ( all image sequences )
-   /0001 
-      000001.jpg
-      000002.jpg
-      ...
-   /0002
-    ...
-/labels  ( all annotations )
-    0001.mat
-    0002.mat
-    ...
-/tools   ( visualization scripts )
-    visualize.m
-    ...
+    /frames  ( all image sequences )
+       /0001 
+          000001.jpg
+          000002.jpg
+          ...
+       /0002
+        ...
+    /labels  ( all annotations )
+        0001.mat
+        0002.mat
+        ...
+    /tools   ( visualization scripts )
+        visualize.m
+        ...
 
-where all images frames are in /frames folder, and all 
-annotations are in /labels folder. Annotations for each
-sequence including class label, coarse viewpoint, human 
-body joints, 2D bounding boxes, and training/testing 
-label are contained in separate mat files under /labels.
+The image frames are located in the /frames folder.
+All frames are in RGB. The resolution of the frames 
+are within the size of 640x480.
 
-All frames are in RGB. The resolution of the frames are 
-within the size of 640x480.
+The annotations are in the /labels folder. The sequence
+annotations include class label, coarse viewpoint, human 
+body joints (2D locations and visibility), 2D bounding 
+boxes, and training/testing label. Each annotation is a 
+separate MATLAB .mat file under /labels.
 
-An example annotation looks like the following in MATLAB:
+An example annotation looks as follows in MATLAB:
 
-annotation = 
+    annotation = 
 
-        action: 'tennis_serve'
-          pose: 'back'
-             x: [46x13 double]
-             y: [46x13 double]
-    visibility: [46x13 logical]
-         train: 1
-          bbox: [46x4 double]
-    dimensions: [272 481 46]
-       nframes: 46
+            action: 'tennis_serve'
+              pose: 'back'
+                 x: [46x13 double]
+                 y: [46x13 double]
+        visibility: [46x13 logical]
+             train: 1
+              bbox: [46x4 double]
+        dimensions: [272 481 46]
+           nframes: 46
 
 ------------------------------------------------------------
                        List of Actions
@@ -72,8 +73,8 @@ bowling         jump_rope       squats
 ------------------------------------------------------------
                       Annotation Tools
 ------------------------------------------------------------
-We made available the annotation tool used in creating this
-dataset. Please refer to http://dreamdragon.github.io/vatic/
+The annotation tool used in creating this dataset is also
+available. Please refer to http://dreamdragon.github.io/vatic/
 for more details.
 
 ------------------------------------------------------------
@@ -82,5 +83,6 @@ for more details.
 Please direct any questions regarding the dataset to
 
 Menglong Zhu <menglong@cis.upenn.edu>
+
 http://cis.upenn.edu/~menglong
 
