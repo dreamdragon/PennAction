@@ -32,7 +32,7 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h2>
-<a name="introducing-penn-action-dataset" class="anchor" href="#introducing-penn-action-dataset"><span class="octicon octicon-link"></span></a>Introducing Penn Action Dataset</h2>
+<a name="introducing-the-penn-action-dataset" class="anchor" href="#introducing-the-penn-action-dataset"><span class="octicon octicon-link"></span></a>Introducing the Penn Action Dataset</h2>
 
 <p>Penn Action Dataset (University of Pennsylvania) contains 
 2326 video sequences of 15 different actions and human 
@@ -46,7 +46,7 @@ available for download via the following link:</p>
 
 <p>If you use our dataset, please cite the following paper:</p>
 
-<pre><code>Weiyu Zhang, Menglong Zhu, Kosta Derpanis,  "From Actemes to Action: 
+<pre><code>Weiyu Zhang, Menglong Zhu and Konstantinos Derpanis, "From Actemes to Action: 
 A Strongly-supervised Representation for Detailed Action Understanding"
 International Conference on Computer Vision (ICCV). Dec 2013.
 </code></pre>
@@ -72,28 +72,28 @@ International Conference on Computer Vision (ICCV). Dec 2013.
     ...
 </code></pre>
 
-<p>where all images frames are in /frames folder, and all 
-annotations are in /labels folder. Annotations for each
-sequence including class label, coarse viewpoint, human 
-body joints, 2D bounding boxes, and training/testing 
-label are contained in separate mat files under /labels.</p>
+<p>The image frames are located in the /frames folder.
+All frames are in RGB. The resolution of the frames 
+are within the size of 640x480.</p>
 
-<p>All frames are in RGB. The resolution of the frames are 
-within the size of 640x480.</p>
+<p>The annotations are in the /labels folder. The sequence annotations 
+include class label, coarse viewpoint, human 
+body joints, 2D bounding boxes, and training/testing 
+label. Each annotation is a separate mat file under /labels.</p>
 
 <p>An example annotation looks like the following in MATLAB:</p>
 
-<p>annotation = </p>
+<pre><code>annotation = 
 
-<pre><code>    action: 'tennis_serve'
-      pose: 'back'
-         x: [46x13 double]
-         y: [46x13 double]
-visibility: [46x13 logical]
-     train: 1
-      bbox: [46x4 double]
-dimensions: [272 481 46]
-   nframes: 46
+      action: 'tennis_serve'
+        pose: 'back'
+           x: [46x13 double]
+           y: [46x13 double]
+  visibility: [46x13 logical]
+       train: 1
+        bbox: [46x4 double]
+  dimensions: [272 481 46]
+     nframes: 46
 </code></pre>
 
 <h2>
