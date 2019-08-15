@@ -10,10 +10,10 @@ available for **download** via the following link:
 
 ##                      Dataset At a Glance
 
-[![](http://www.seas.upenn.edu/~menglong/PennAction/Action.png)]
+[![](https://github.com/dreamdragon/dreamdragon.github.io/blob/master/PennAction/Action.png?raw=true)]
 (https://www.youtube.com/watch?v=RjlFNGINFwE)
 
-[![](http://www.seas.upenn.edu/~menglong/PennAction/Keypoints.png)]
+[![](https://github.com/dreamdragon/dreamdragon.github.io/blob/master/PennAction/Keypoints.png?raw=true)]
 (https://www.youtube.com/watch?v=RjlFNGINFwE)
 
 ##                          Reference
@@ -95,6 +95,6 @@ Please refer to http://dreamdragon.github.io/vatic/ for more details.
 
 Please direct any questions regarding the dataset to
 
-Menglong Zhu <menglong@cis.upenn.edu>
+Menglong Zhu <menglong@google.com> http://dreamdragon.github.io
 
-http://cis.upenn.edu/~menglong
+Kosta Derpanis (kosta _at_ scs.ryerson.ca) http://www.scs.ryerson.ca/kosta/
