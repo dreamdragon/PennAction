@@ -5,7 +5,7 @@ Penn Action Dataset (University of Pennsylvania) contains
 joint annotations** for each sequence. The dataset is 
 available for **download** via the following link:
 
-   **Download:** https://upenn.box.com/PennAction
+   **Download:** <https://upenn.box.com/PennAction>
 
 
 ##                      Dataset At a Glance
