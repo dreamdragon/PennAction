@@ -10,10 +10,10 @@ available for **download** via the following link:
 
 ##                      Dataset At a Glance
 
-[![](https://github.com/dreamdragon/dreamdragon.github.io/blob/master/PennAction/Action.png?raw=true)]
+![](https://github.com/dreamdragon/dreamdragon.github.io/blob/master/PennAction/Action.png?raw=true)
 (https://www.youtube.com/watch?v=RjlFNGINFwE)
 
-[![](https://github.com/dreamdragon/dreamdragon.github.io/blob/master/PennAction/Keypoints.png?raw=true)]
+![](https://github.com/dreamdragon/dreamdragon.github.io/blob/master/PennAction/Keypoints.png?raw=true)
 (https://www.youtube.com/watch?v=RjlFNGINFwE)
 
 ##                          Reference
