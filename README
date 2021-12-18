@@ -6,7 +6,7 @@ different actions and human joint annotations for each
 sequence. The dataset is available for download via the
 following link:
 
-   https://upenn.box.com/PennAction
+   https://www.cis.upenn.edu/~kostas/Penn_Action.tar.gz
 
 ------------------------------------------------------------
                           Reference
@@ -83,7 +83,6 @@ for more details.
 ------------------------------------------------------------
 Please direct any questions regarding the dataset to
 
-Menglong Zhu <menglong@cis.upenn.edu>
-
-http://cis.upenn.edu/~menglong
+Kosta Derpanis <kosta@yorku.ca>
+Kostas Daniilidis <kostas@cis.upenn.edu>
 
