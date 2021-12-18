@@ -5,7 +5,7 @@ Penn Action Dataset (University of Pennsylvania) contains
 joint annotations** for each sequence. The dataset is 
 available for **download** via the following link:
 
-   **Download:** <https://upenn.box.com/PennAction>
+   **Download:** <https://www.cis.upenn.edu/~kostas/Penn_Action.tar.gz>
 
 
 ##                      Dataset At a Glance
@@ -95,6 +95,8 @@ Please refer to <http://dreamdragon.github.io/vatic/> for more details.
 
 Please direct any questions regarding the dataset to
 
-Menglong Zhu <menglong@google.com> <http://dreamdragon.github.io>
+Kosta Derpanis <kosta@yorku.ca>
 
-Kosta Derpanis (kosta _at_ scs.ryerson.ca) <http://www.scs.ryerson.ca/kosta/>
+Kostas Daniilidis <kostas@cis.upenn.edu>
+
+Menglong Zhu <http://dreamdragon.github.io>
